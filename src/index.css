@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mantine-color-dark-6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mantine-color-dark-4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mantine-color-dark-3);
+}
+
+/* Drag and drop styles */
+.dragging {
+  cursor: grabbing !important;
+}
+
+/* Note styles */
+.note-text-area {
+  resize: none !important;
+  min-height: 0 !important;
+}
+
+.note-raw {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.note-collapsed .mantine-Textarea-input {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Light/Dark mode transitions */
+* {
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
