@@ -33,7 +33,7 @@ export function Layout() {
       <AppShell.Header>
         <Group h="100%" px="md" justify="space-between">
           <Group>
-            <Title order={3}>Nullboard</Title>
+            <Title order={3}>Namboard</Title>
             {currentBoard && (
               <Title order={3} c="dimmed">
                 / {currentBoard.title || '(Untitled Board)'}
